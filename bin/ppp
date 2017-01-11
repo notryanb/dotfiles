@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+#
+# Pretty Prints $PATH
+
+import os
+
+def path_pretty_print():
+  paths = os.environ['PATH'].split(':')
+  for path in paths:
+      print('{}').format(path)
+
+path_pretty_print()
+
