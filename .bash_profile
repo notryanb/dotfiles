@@ -113,5 +113,5 @@
     source $(brew --prefix nvm)/nvm.sh
 		if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
     
-    export PATH=$PATH:$HOME/.dotfiles:$HOME/.dotfiles/bin
+    export PATH=$PATH:$HOME/dotfiles:$HOME/dotfiles/bin
     export PATH=/usr/local/bin:$PATH
