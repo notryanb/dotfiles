@@ -10,7 +10,7 @@ nmap 0 ^
 nmap <C-s> :w<cr>
 
 let mapleader = "\<Space>"
-nmap <leader>vr :sp $MYVIMRC
+nmap <leader>vr :tabedit $MYVIMRC
 nmap <leader>so :source $MYVIMRC
 nmap <leader>cc \cc
 nmap <leader>cu \cu
@@ -74,7 +74,7 @@ set backspace=indent,eol,start  " Default backspacing behavior
 set laststatus=2
 set showtabline=2
 set guioptions-=e
-set statusline=[%n]\ %<%.99f\ %h%w%m%r%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%y%=%-16(\ %l,%c-%v\ %)%P
+"set statusline=[%n]\ %<%.99f\ %h%w%m%r%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%y%=%-16(\ %l,%c-%v\ %)%P
 "set statusline+=%{synIDattr(synID(line('.'),col('.'),1),'name')}\
 "set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
 
@@ -87,10 +87,15 @@ colorscheme jellybeans
 syntax on                       " Enable syntax highlighting
 
 " Syntastic defaults
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_ruby_checkers = ['mri', 'rubocop']
 
 " Get Rust syntax highlighting to work
 " filetype on
