@@ -54,6 +54,7 @@ endif
 
 " Ruby Settings "
 au BufRead,BufNewFile Gemfile set filetype=ruby
+au BufRead,BufNewFile *.am set filetype=ruby
 
 " Rust Settings "
 au BufNewFile,BufRead *.rs set filetype=rust
@@ -85,6 +86,11 @@ set splitright
 colorscheme jellybeans
 syntax on                       " Enable syntax highlighting
 
+" Syntastic defaults
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 " Get Rust syntax highlighting to work
 " filetype on
