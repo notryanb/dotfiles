@@ -112,6 +112,8 @@
     export NVM_DIR=~/.nvm
     source $(brew --prefix nvm)/nvm.sh
 		if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+    source git-completion.bash
     
     export PATH=$PATH:$HOME/dotfiles:$HOME/dotfiles/bin
     export PATH=/usr/local/bin:$PATH
