@@ -4,10 +4,13 @@ AllCops:
 Documentation:
   Enabled: false
 
-Metrics/MethodLength:
-  Enabled: false
+Metrics/LineLength:
+  Max: 120
 
 Metrics/BlockLength:
+  Enabled: false
+
+Metrics/MethodLength:
   Enabled: false
 
 Style/FrozenStringLiteralComment:
