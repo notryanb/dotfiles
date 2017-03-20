@@ -15,6 +15,18 @@ nmap <leader>so :source $MYVIMRC
 nmap <leader>cc \cc
 nmap <leader>cu \cu
 
+" Move code up and down with Alt + dir
+" in all modes
+
+nnoremap ˚ :m .+1<CR>==
+nnoremap ∆ :m .-2<CR>==
+
+inoremap ˚ <Esc>:m .+1<CR>==gi
+inoremap ∆ <Esc>:m .-2<CR>==gi
+
+vnoremap ˚ :m '<-2<CR>gv=gv
+vnoremap ∆ :m '>+1<CR>gv=gv
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 
