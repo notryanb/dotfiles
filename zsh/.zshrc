@@ -83,8 +83,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export PATH="$HOME/.rbenv/shims:$PATH"
 
-for zsh_source in $HOME/.zsh/configs/*.zsh; do
+for zsh_source in $HOME/dotfiles/zsh/configs/*.zsh; do
   source $zsh_source
 done
