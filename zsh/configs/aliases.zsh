@@ -9,6 +9,8 @@ alias hcp="heroku run console -a mlr-production"
 alias qrw="QUEUE=* bundle exec rake environment resque:work"
 alias mqrw="COUNT=10 VVERBOSE=1 QUEUE=* bundle exec rake environment resque:workers"
 alias sbp="source ~/.bash_profile"
+alias szp="source ~/.zshrc"
+alias sze="source ~/.zshenv"
 alias mlr="cd ~/Sites/mylocalreports"
 
 alias cp='cp -iv'                           # Preferred 'cp' implementation
