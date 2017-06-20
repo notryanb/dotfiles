@@ -11,6 +11,7 @@ nmap <C-s> :w<cr>
 
 let mapleader = "\<Space>"
 nmap <leader>vr :tabedit $MYVIMRC
+nmap <leader>to :tabonly
 nmap <leader>so :source $MYVIMRC
 nmap <leader>cc \cc
 nmap <leader>cu \cu
@@ -53,10 +54,11 @@ Plugin 'tpope/vim-repeat'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'vim-scripts/surround.vim'
 
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
-Plugin 'honza/vim-snippets'
+" Vim Snippets requires
+" Plugin 'MarcWeber/vim-addon-mw-utils'
+" Plugin 'tomtom/tlib_vim'
+" Plugin 'garbas/vim-snipmate'
+" Plugin 'honza/vim-snippets'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -93,7 +95,7 @@ set expandtab
 set backspace=indent,eol,start  " Default backspacing behavior
 
 " Set tag file for search order
-set tags=./tags;
+" set tags=./tags;
 
 " Status Line settings
 set laststatus=2
