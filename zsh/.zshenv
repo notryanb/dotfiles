@@ -2,7 +2,14 @@
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
+# RBENV
 export PATH="$HOME/.rbenv/shims:$PATH"
+
+# Rustup in toolchain
+export PATH="$HOME/.cargo/bin:$PATH"
+source $HOME/.cargo/env
+
+# Symlink to dotfiles repo
 export PATH=$PATH:$HOME/dotfiles:$HOME/dotfiles/bin
 export PATH=/usr/local/bin:$PATH
 
@@ -12,6 +19,10 @@ export PATH="/usr/local/bin:$PATH"
 # Add my custom commands
 export PATH="$HOME/bin:$PATH"
 
+# RAILS ENV VARS
+export RACK_ENV='development'
+export BULLET_STATUS='false'
+export RMP_STATUS='true'
 
 # init RBENV after PATHS configured
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi

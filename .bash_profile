@@ -96,7 +96,7 @@
 		alias .6='cd ../../../../../../'            # Go back 6 directory levels
 		alias ~="cd ~"                              # ~:            Go Home
 		alias c='clear'                             # c:            Clear terminal display
-		alias which='type -all'                     # which:        Find executables
+		# alias which='type -all'                     # which:        Find executables
 
 #   -----------------------------
 #   3.  ENVIRONMENT VARIABLES
