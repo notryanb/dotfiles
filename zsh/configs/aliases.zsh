@@ -12,6 +12,7 @@ alias sbp="source ~/.bash_profile"
 alias szp="source ~/.zshrc"
 alias sze="source ~/.zshenv"
 alias mlr="cd ~/Sites/mylocalreports"
+alias be="bundle exec"
 
 alias cp='cp -iv'                           # Preferred 'cp' implementation
 alias mv='mv -iv'                           # Preferred 'mv' implementation
