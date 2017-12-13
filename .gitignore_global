@@ -7,6 +7,7 @@
 # Backup files created by the vim text editor
 *.swp
 *.swo
+
 # *.sqlite3 are local databases.  Make your own, don't share
 *.sqlite3
 
@@ -15,3 +16,6 @@
 
 # .Trashes holds disk specific trash folders
 .Trashes
+
+# backup files from rustfmt
+*.bk
