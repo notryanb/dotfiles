@@ -27,8 +27,5 @@ alias .5='cd ../../../../../'               # Go back 5 directory levels
 alias .6='cd ../../../../../../'            # Go back 6 directory levels
 alias ~="cd ~"                              # ~:            Go Home
 alias c='clear'                             # c:            Clear terminal display
-<<<<<<< HEAD
 # alias which='type -all'                     # which:        Find executables
-=======
->>>>>>> 1dd28ce97d4bc5cdb3ca31d643be0b8fad325879
 

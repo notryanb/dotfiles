@@ -1,3 +1,5 @@
+echo "loadng zshenv"
+
 # nvm config
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
