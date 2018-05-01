@@ -45,7 +45,7 @@ Plugin 'mxw/vim-jsx'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'rust-lang/rust.vim'
-Plugin 'scrooloose/syntastic'
+" Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdcommenter'
 " Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-fugitive'
@@ -53,6 +53,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-repeat'
 " Plugin 'vim-ruby/vim-ruby'
 Plugin 'vim-scripts/surround.vim'
+Plugin 'w0rp/ale'
 Plugin 'bling/vim-airline'
 
 " Vim Snippets requires
@@ -105,15 +106,15 @@ colorscheme jellybeans
 syntax on                       " Enable syntax highlighting
 
 " Syntastic defaults
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 1
-let g:syntastic_ruby_checkers = ['mri', 'rubocop']
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 0
+" let g:syntastic_check_on_wq = 1
+" let g:syntastic_ruby_checkers = ['mri', 'rubocop']
 
 " Nerd Commenter settings
 let g:NERDSpaceDelims = 1 " Add spaces after comment delimiters
