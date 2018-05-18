@@ -87,3 +87,13 @@ source $ZSH/oh-my-zsh.sh
 for zsh_source in $HOME/dotfiles/zsh/configs/*.zsh; do
   source $zsh_source
 done
+
+# Rbenv config below, as it must be earlier in path
+# and it wasn't overwriting ruby version
+
+# RBENV
+export PATH="$HOME/.rbenv/shims:$PATH"
+
+# init RBENV after PATHS configured
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
