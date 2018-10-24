@@ -5,11 +5,12 @@
 # Add homebrew binaries
 export PATH="/usr/local/bin:$PATH"
 
-# RBENV
-
 # Rustup in toolchain
 export PATH="$HOME/.cargo/bin:$PATH"
 source $HOME/.cargo/env
+
+# MongoDB enterprise
+export PATH="$HOME:/Users/ryan/mongodb-osx-x86_64-enterprise-4.0.0/bin/:$PATH"
 
 # Symlink to dotfiles repo
 export PATH=$PATH:$HOME/dotfiles:$HOME/dotfiles/bin

@@ -19,3 +19,7 @@
 
 # backup files from rustfmt
 *.bk
+
+# logs
+*.log*
+*.log
