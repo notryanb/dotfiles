@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-echo "loading zshrc"
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -87,3 +87,7 @@ source $ZSH/oh-my-zsh.sh
 for zsh_source in $HOME/dotfiles/zsh/configs/*.zsh; do
   source $zsh_source
 done
+
+# init RBENV after PATHS configured
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
