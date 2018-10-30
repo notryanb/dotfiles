@@ -55,6 +55,7 @@ Plugin 'tpope/vim-repeat'
 Plugin 'vim-scripts/surround.vim'
 Plugin 'w0rp/ale'
 Plugin 'bling/vim-airline'
+Plugin 'mattn/emmet-vim'
 
 " Vim Snippets requires
 " Plugin 'MarcWeber/vim-addon-mw-utils'
