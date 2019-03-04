@@ -18,7 +18,7 @@ alias be="bundle exec"
 
 alias cp='cp -iv'                           # Preferred 'cp' implementation
 alias mv='mv -iv'                           # Preferred 'mv' implementation
-alias ll='ls -FGlAhp'                       # Preferred 'ls' implementation
+alias ll='exa -l'
 alias less='less -FSRXc'                    # Preferred 'less' implementation
 cd() { builtin cd "$@"; ll; }               # Always list directory contents upon 'cd'
 alias cd..='cd ../'                         # Go back 1 directory level (for fast typers)

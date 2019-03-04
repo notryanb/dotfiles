@@ -18,6 +18,9 @@ export PATH=$PATH:$HOME/dotfiles:$HOME/dotfiles/bin
 # Add my custom commands
 export PATH="$HOME/bin:$PATH"
 
+# For SDL2
+export LIBRARY_PATH="$LIBRARY_PATH:/usr/local/lib"
+
 # RAILS ENV VARS
 export RACK_ENV='development'
 export BULLET_STATUS='false'
