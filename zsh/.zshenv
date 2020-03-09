@@ -10,7 +10,10 @@ export PATH="$HOME/.cargo/bin:$PATH"
 source $HOME/.cargo/env
 
 # MongoDB enterprise
-export PATH="$HOME:/Users/ryan/mongodb-osx-x86_64-enterprise-4.0.0/bin/:$PATH"
+export PATH="$HOME:/Users/${whoami}/mongodb-osx-x86_64-enterprise-4.0.0/bin/:$PATH"
+
+# Tag My Tracks... uh... I should probably interpolate the User path...
+export PATH="$HOME:/Users/{$whoami}/Rust/tag-my-tracks/target/release/:$PATH"
 
 # Symlink to dotfiles repo
 export PATH=$PATH:$HOME/dotfiles:$HOME/dotfiles/bin

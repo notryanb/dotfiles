@@ -56,6 +56,7 @@ Plugin 'vim-scripts/surround.vim'
 Plugin 'w0rp/ale'
 Plugin 'bling/vim-airline'
 Plugin 'mattn/emmet-vim'
+Plugin 'joukevandermaas/vim-ember-hbs'
 
 " Vim Snippets requires
 " Plugin 'MarcWeber/vim-addon-mw-utils'
