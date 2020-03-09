@@ -1,3 +1,4 @@
+DEFAULT_USER=`whoami`
 # nvm config
 #export NVM_DIR=~/.nvm
 #source $(brew --prefix nvm)/nvm.sh
@@ -10,10 +11,10 @@ export PATH="$HOME/.cargo/bin:$PATH"
 source $HOME/.cargo/env
 
 # MongoDB enterprise
-export PATH="$HOME:/Users/${whoami}/mongodb-osx-x86_64-enterprise-4.0.0/bin/:$PATH"
+export PATH="$HOME:/Users/${DEFAULT_USER}/mongodb-osx-x86_64-enterprise-4.0.0/bin/:$PATH"
 
 # Tag My Tracks... uh... I should probably interpolate the User path...
-export PATH="$HOME:/Users/{$whoami}/Rust/tag-my-tracks/target/release/:$PATH"
+export PATH="$HOME:/Users/${DEFAULT_USER}/Rust/tag-my-tracks/target/release/:$PATH"
 
 # Symlink to dotfiles repo
 export PATH=$PATH:$HOME/dotfiles:$HOME/dotfiles/bin
